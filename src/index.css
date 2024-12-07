@@ -4,3 +4,15 @@
 .w-18 {
   width: 4.5rem; /* 72px */
 }
+.w-416 {
+  width: 104rem; /* 1664px */
+}
+.mt-21 {
+  margin-top: 5.25rem; /* 84px */
+}
+.text-grey-61666D {
+  color: #61666D
+}
+.font-chinese {
+  font-family: PingFang SC,HarmonyOS_Regular,Helvetica Neue,Microsoft YaHei,sans-serif !important
+}

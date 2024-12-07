@@ -2,6 +2,7 @@ import './App.css';
 import { Fragment } from 'react';
 import VideoCard from './VideoCard';
 import ChannelLink from './ChannelLink';
+import ChannelLinkR from './ChannelLinkR';
 import Header from './Header';
 import ImageLayer from './ImageLayer';
 
@@ -10,23 +11,21 @@ function App() {
 
   return (
     <Fragment>
-      <div className="">
+      <div className="font-chinese font-normal">
         <div className='block'>
           <Header />
 
-          <div>
-            <div className=''>
+          <div className=''>
+            <div className='z-0'>
               <ImageLayer imageSrc="head-layer/lay1.webp"/>
- 
-              
-
+              <ImageLayer imageSrc="head-layer/lay2.webp"/>
             </div>
 
-            <div className=''>
-              <a href={local_website}>
+            <div className='z-20 h-40 px-14 flex items-end'>
+              <a href={local_website} className='mb-2.5'>
                 <img 
                   src="bili-logo.png" alt="" 
-                  className='w-40'
+                  className='z-20 w-40 relative'
                 />
               </a>
             </div>
@@ -34,19 +33,30 @@ function App() {
             <div></div>
           </div>
 
-          <div className='flex justify-center items-center m-0 mx-auto h-24'>
-            <div className='flex-auto flex justify-center items-center'>
-              <a href="" className='mr-4'>
-                <div></div>
+          <div className='flex justify-center items-center m-0 mx-5 h-24'>
+            <div className='flex-auto flex justify-center items-center text-center'>
+              <a href="" className='flex-1 flex flex-col items-center'>
+                <div>
+                  <picture>
+                    <img src="icon-ted.jpg" alt="" className='h-10 w-10' />
+                  </picture>
+                </div>
+                <i></i>
                 <span>动态</span>
               </a>
-              <a href="">
-                <div></div>
+              <a href="" className='flex-1'>
+                <div className='h-10 w-10'>
+                  <svg className='h-5 w-5'>
+                    <path>
+
+                    </path>
+                  </svg>
+                </div>
                 <span>热门</span>
               </a>
             </div>
             <div className='flex-auto flex justify-center'>
-              <div className='grid grid-rows-2 grid-flow-col gap-2.5 pr-5 border-r text-center'>
+              <div className='grid grid-rows-2 grid-flow-col gap-2.5 pr-5 border-r text-center justify-center text-center'>
                 <ChannelLink name="番剧" />
                 <ChannelLink name="电影" />
                 <ChannelLink name="国创" />
@@ -67,36 +77,41 @@ function App() {
                 <ChannelLink name="更多" />
               </div>
               <div className='grid grid-rows-2 grid-flow-col gap-y-2.5'>
-                <a href="" className='px-2'>专栏</a>
-                <a href="" className='px-2'>直播</a>
-                <a href="" className='px-2'>活动</a>
-                <a href="" className='px-2'>课堂</a>
-                <a href="" className='px-2'>社区中心</a>
-                <a href="" className='px-2'>新歌热榜</a>
-
+                <ChannelLinkR name="专栏"/>
+                <ChannelLinkR name="直播"/>
+                <ChannelLinkR name="活动"/>
+                <ChannelLinkR name="课堂"/>
+                <ChannelLinkR name="社区中心"/>
+                <ChannelLinkR name="新歌热榜"/>
               </div>
             </div>
           </div>
           
         </div>
-        <main>
+        <main className='mx-5'>
           <div>
             <div className='grid grid-cols-4 gap-5'>
               <div className='col-span-2 row-span-2'>
-                <div>
+                {/* 设置一个看不见的grid，用于占位 */}
+                {/* <div 
+                  className='grid grid-cols-2 invisible gap-5 select-none pointer-events-none'
+                >
                   <div></div>
                   <div></div>
                   <div></div>
                   <div></div>
-                </div>
+                </div> */}
 
-                <div>
+                <div className='pb-16 h-full'>
                   <div>
                     <div>
                       <div></div>
                       <a href="">
                         <picture>
-                          <img src="recommend-pic-1.jpg" alt="" />
+                          <img 
+                            src="recommend-pic-1.jpg" alt="" 
+                            className='rounded-md'
+                          />
                         </picture>
                       </a>
                     </div>
@@ -106,8 +121,9 @@ function App() {
 
                   <div>
                     <div></div>
-                    <div>
-                      <div>
+
+                    <div className='mx-4 mt-3'>
+                      <div className='flex'>
                         <a href="">
                           <span>
                             鹿角我要消灭你！
@@ -116,10 +132,25 @@ function App() {
                       </div>
                     </div>
 
-                    <div></div>
+                    <div>
+                      {/* 一排小圆点 */}
+                      <ul>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
-                  <div>&lt; &gt;</div>
+                  <div className='absolute z-20 flex left-96'>
+                    <button className='mr-3'>
+                      &lt;
+                    </button>  
+                    <button>
+                      &gt;
+                    </button>  
+                  </div>
                 </div>
               </div>
               <VideoCard 

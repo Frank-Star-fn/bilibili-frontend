@@ -16,7 +16,7 @@ function Header(props) {
   };
   return (
     <Fragment>
-      <div className='absolute h-16 px-6 flex justify-center items-center'>
+      <div className='z-30 absolute h-16 pl-8 flex justify-center items-center'>
         <ul className='flex items-center'>
           <HeaderItem name="首页" />
           <HeaderItem name="番剧" />

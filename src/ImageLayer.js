@@ -2,10 +2,10 @@
 function ImageLayer(props) {
 
   return(
-    <div>
+    <div className="absolute">
       <img 
         src={props.imageSrc} alt="" 
-        className='h-40' 
+        className='w-416 h-40' 
       />
     </div>
   );
