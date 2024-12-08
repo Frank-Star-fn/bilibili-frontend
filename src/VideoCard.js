@@ -73,11 +73,9 @@ function VideoCard(props) {
             </div>
           </a>
 
-          <div>
-            <div>
-              <div>
-
-              </div>
+          <div className="my-2">
+            <div className="">
+              <div></div>
               <h3 title={title_cut} className="my-1.5 h-12">
                 <a href={local_website}>
                   {title_cut}

@@ -14,6 +14,9 @@
 .w-54 {
   width: 13.5rem; /* 216px */
 }
+.w-125\.5 {
+  width: 502px;
+}
 .w-416 {
   width: 104rem; /* 1664px */
 }
@@ -22,6 +25,9 @@
 }
 .h-6\.25 {
   height: 25px;
+}
+.h-38\.75 {
+  height: 155px;
 }
 
 .mt-21 {
@@ -51,6 +57,11 @@
 .bg-orange-FFF0E3 {
   background-color: #FFF0E3;
 }
+.from-purple-443 {
+  --tw-gradient-from: rgb(160 122 161) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(147 51 234 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 
 .font-chinese {
   font-family: PingFang SC,HarmonyOS_Regular,Helvetica Neue,Microsoft YaHei,sans-serif !important
@@ -59,3 +70,6 @@
   font-size: 13px;
 }
 
+input::-webkit-input-placeholder {
+  color: #61666d;
+}

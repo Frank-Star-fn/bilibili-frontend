@@ -21,7 +21,7 @@ function App() {
               <ImageLayer imageSrc="head-layer/lay2.webp"/>
             </div>
 
-            <div className='z-20 h-40 px-14 flex items-end'>
+            <div className='z-20 h-38.75 px-14 flex items-end'>
               <a href={local_website} className='mb-2.5'>
                 <img 
                   src="bili-logo.png" alt="" 
@@ -33,7 +33,7 @@ function App() {
             <div></div>
           </div>
 
-          <div className='flex justify-center items-center m-0 mx-5 h-24'>
+          <div className='flex justify-center items-center mx-5 mb-1 h-24'>
             <div className='flex-auto flex justify-center items-center text-center'>
               <a href={local_website} className='flex-1 flex flex-col items-center mx-1'>
                 <div>
@@ -73,8 +73,19 @@ function App() {
                 <ChannelLink name="科技" />
                 <ChannelLink name="资讯" />
                 <ChannelLink name="美食" />
-                <ChannelLink name="更多" />
+                
+                {/* <ChannelLink name="更多" /> */}
+                <a href={local_website} className="border w-18 py-1 text-grey-61666D text-13px font-normal bg-gray-50 rounded-md tracking-wider">
+                  <div className='flex justify-center items-center'>
+                    <span className='px-1'>更多</span>
+                    <svg className='w-3 h-3 pt-0.5'>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50588 3.40623C7.40825 3.3086 7.24996 3.3086 7.15232 3.40623L4.41244 6.14612L1.67255 3.40623C1.57491 3.3086 1.41662 3.3086 1.31899 3.40623C1.22136 3.50386 1.22136 3.66215 1.31899 3.75978L4.11781 6.5586C4.28053 6.72132 4.54434 6.72132 4.70706 6.5586L7.50588 3.75978C7.60351 3.66215 7.60351 3.50386 7.50588 3.40623Z" fill="currentColor"></path>
+                      <path d="M7.15232 3.40623L7.50588 3.75978L7.50588 3.75978L7.15232 3.40623ZM7.50588 3.40623L7.15232 3.75978L7.15233 3.75978L7.50588 3.40623ZM4.41244 6.14612L4.05888 6.49967C4.15265 6.59344 4.27983 6.64612 4.41244 6.64612C4.54504 6.64612 4.67222 6.59344 4.76599 6.49967L4.41244 6.14612ZM1.67255 3.40623L2.0261 3.05268L2.0261 3.05268L1.67255 3.40623ZM1.31899 3.40623L0.965439 3.05268L0.965439 3.05268L1.31899 3.40623ZM1.31899 3.75978L1.67255 3.40623V3.40623L1.31899 3.75978ZM4.11781 6.5586L3.76425 6.91215L4.11781 6.5586ZM4.70706 6.5586L4.35351 6.20505L4.70706 6.5586ZM7.50588 3.75978L7.15233 3.40623L7.15232 3.40623L7.50588 3.75978ZM7.50588 3.75978C7.40825 3.85742 7.24996 3.85742 7.15232 3.75978L7.85943 3.05268C7.56654 2.75978 7.09166 2.75978 6.79877 3.05268L7.50588 3.75978ZM4.76599 6.49967L7.50588 3.75978L6.79877 3.05268L4.05888 5.79257L4.76599 6.49967ZM1.31899 3.75978L4.05888 6.49967L4.76599 5.79257L2.0261 3.05268L1.31899 3.75978ZM1.67254 3.75979C1.57491 3.85742 1.41662 3.85742 1.31899 3.75979L2.0261 3.05268C1.73321 2.75978 1.25833 2.75978 0.965439 3.05268L1.67254 3.75979ZM1.67255 3.40623C1.77018 3.50386 1.77018 3.66215 1.67255 3.75978L0.965439 3.05268C0.672546 3.34557 0.672546 3.82044 0.965439 4.11334L1.67255 3.40623ZM4.47136 6.20505L1.67255 3.40623L0.965439 4.11334L3.76425 6.91215L4.47136 6.20505ZM4.35351 6.20505C4.38605 6.1725 4.43882 6.1725 4.47136 6.20505L3.76425 6.91215C4.12223 7.27013 4.70264 7.27013 5.06062 6.91215L4.35351 6.20505ZM7.15232 3.40623L4.35351 6.20505L5.06062 6.91215L7.85943 4.11334L7.15232 3.40623ZM7.15233 3.75978C7.05469 3.66215 7.05469 3.50386 7.15233 3.40623L7.85943 4.11334C8.15233 3.82045 8.15233 3.34557 7.85943 3.05268L7.15233 3.75978Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </a>
               </div>
+
               <div className='grid grid-rows-2 grid-flow-col gap-y-2.5'>
                 <ChannelLinkR name="专栏"/>
                 <ChannelLinkR name="直播"/>
@@ -85,8 +96,8 @@ function App() {
               </div>
             </div>
           </div>
-          
         </div>
+
         <main className='mx-5'>
           <div>
             <div className='grid grid-cols-4 gap-5'>
@@ -113,8 +124,9 @@ function App() {
                           />
                         </picture>
                       </a>
+                      <div className='absolute z-30 w-125.5 h-20 -mt-20 bg-gradient-to-t from-purple-443'>
+                      </div>
                       <div className='w-full h-20 rounded-b-md bg-purple-443'>
-
                       </div>
                     </div>
                     <div></div>
@@ -124,7 +136,7 @@ function App() {
                   <div>
                     <div></div>
 
-                    <div className='absolute mx-4 -mt-14'>
+                    <div className='absolute mx-4 -mt-16'>
                       <div className='flex'>
                         <a href={local_website}>
                           <span className='text-white text-lg'>
@@ -145,9 +157,13 @@ function App() {
                     </div>
                   </div>
 
-                  <div className='absolute -mt-14 z-20 flex left-112'>
+                  <div className='absolute -mt-16 z-20 flex left-112'>
                     <button className='justify-center mr-3 px-1.5 text-white bg-transparent-white rounded-lg'>
                       &lt;
+                      {/* <svg>
+                        <use>
+                        </use>
+                      </svg> */}
                     </button>  
                     <button className='justify-center px-1.5 text-white bg-transparent-white rounded-lg'>
                       &gt;
@@ -189,28 +205,28 @@ function App() {
                 cardInfo="已关注"
               ></VideoCard>
 
-              <div className='pt-10'>
+              <div className='pt-9'>
                   <VideoCard 
                     pictureSrc="video-pic/video-2-pic.jpg" title="为什么哪里都有Docker的身影？你真的了解它背后的容器技术吗？" 
                     author="Valiant程" date="11-14" 
                     cardInfo="已关注"
                   ></VideoCard>
               </div>
-              <div className='pt-10'>
+              <div className='pt-9'>
                 <VideoCard 
                   pictureSrc="video-pic/video-3-pic.jpg" title="【1818黄金眼】“00后”通过中介进电子工厂，涉世未深 vs 门道很深" 
                   author="1818黄金眼" date="11-30"
                   cardInfo="已关注"
                 ></VideoCard>
               </div>
-              <div className='pt-10'>
+              <div className='pt-9'>
                 <VideoCard 
                   pictureSrc="video-pic/video-4-pic.jpg" title="终于来了！Netflix魔幻史诗大剧《百年孤独》正式预告，年度必看！12.11上线" 
                   author="乌鸦预告片" date="11-25"
                   cardInfo="up"
                 ></VideoCard>
               </div>
-              <div className='pt-10'>
+              <div className='pt-9'>
                 <VideoCard 
                   pictureSrc="video-pic/video-1-pic.jpg" title="聊聊3.13中你们感兴趣的特性，和我实现的功能" 
                   author="码农高天" date="10-11"

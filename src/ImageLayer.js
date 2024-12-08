@@ -5,7 +5,7 @@ function ImageLayer(props) {
     <div className="absolute">
       <img 
         src={props.imageSrc} alt="" 
-        className='w-416 h-40' 
+        className='h-38.75' 
       />
     </div>
   );

@@ -5,7 +5,7 @@ function ChannelLinkR(props) {
 
   return (
     <Fragment>
-      <a href={local_website} className="px-2.5 py-1 text-grey-61666D text-13px font-normal">
+      <a href={local_website} className="pl-4 py-1 text-grey-61666D text-13px font-normal">
         {props.name}
       </a>
     </Fragment>
