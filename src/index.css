@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.w-4\.5 {
+  width: 18px;
+}
 .w-6\.25 {
   width: 25px;
 }
@@ -13,6 +16,9 @@
 }
 .w-416 {
   width: 104rem; /* 1664px */
+}
+.h-4\.5 {
+  height: 18px;
 }
 .h-6\.25 {
   height: 25px;
@@ -27,6 +33,9 @@
 .text-grey-61666D {
   color: #61666D;
 }
+.text-orange-FF7F24 {
+  color: #FF7F24;
+}
 .bg-purple-443 {
   background-color: rgb(160 122 161);
 }
@@ -35,6 +44,12 @@
 }
 .bg-pink-fb7299 {
   background-color: #fb7299;
+}
+.bg-transparent-white {
+  background-color: rgba(255,255,255,.1);
+}
+.bg-orange-FFF0E3 {
+  background-color: #FFF0E3;
 }
 
 .font-chinese {
