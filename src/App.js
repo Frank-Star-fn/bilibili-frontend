@@ -5,7 +5,6 @@ import LargeHeader from './header/LargeHeader';
 import GridBox from './GridBox';
 import GridBoxFiveCol from './GridBoxFiveCol';
 import ButtonChange from './ButtonChange';
-// import useViewport from './ViewportContext';
 
 const useViewport = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
@@ -20,7 +19,6 @@ const useViewport = () => {
 }
 
 function App() {
-  const local_website = "http://localhost:3000/";
   const { width } = useViewport();
   const breakpoint = 1400;
 

@@ -41,21 +41,21 @@ function GridBoxFiveCol() {
       <div className='pt-0'>
         <VideoCardV1400 
         pictureSrc="video-pic/video-10-pic.jpg" 
-        numWatch="3.7万" numChat="163"
+        numWatch="3.7万" numChat="164"
         videoTime="09:19"
         title="9分钟游遍阿姆斯特丹：这座低于海平面的荷兰首都，如何闪耀世界？" 
         cardInfo="已关注"
-        author="码农高天" date="11-16"
+        author="两颗太阳Show" date="12-6"
         />
       </div>
       <div className='pt-0'>
         <VideoCardV1400  
-                pictureSrc="video-pic/video-9-pic.jpg" 
-                numWatch="60.2万" numChat="712"
-                videoTime="05:33"
-                title="我 很 大 气，从 不 计 较 得" 
-                cardInfo="已关注"
-                author="知了解压萌物" date="12-6"
+          pictureSrc="video-pic/video-9-pic.jpg" 
+          numWatch="60.2万" numChat="712"
+          videoTime="05:33"
+          title="我 很 大 气，从 不 计 较 得" 
+          cardInfo="已关注"
+          author="知了解压萌物" date="12-6"
         />
       </div>
 
