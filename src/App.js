@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import { Fragment } from 'react';
 import LargeHeader from './header/LargeHeader';
+import LargeHeaderV1400 from './header/LargeHeaderV1400';
 import GridBox from './grid/GridBox';
 import GridBoxFiveCol from './grid/GridBoxFiveCol';
 import ButtonChange from './ButtonChange';
@@ -38,7 +39,7 @@ function App() {
 
   const eleNormal = (
     <div>
-        <LargeHeader />
+        <LargeHeaderV1400 />
         <div className="font-chinese font-normal">
           <main className='px-15'>
             <div>
@@ -51,14 +52,14 @@ function App() {
   );
 
   if (width < breakpoint) {
-    console.log("small, width = "+width)
+    // console.log("small, width = "+width)
     return (
       <Fragment>
         {eleSmall};
       </Fragment>
     );
   }else{ // width >= breakpoint
-    console.log("normal, width = "+width)
+    // console.log("normal, width = "+width)
     return (
       <Fragment>
         {eleNormal}

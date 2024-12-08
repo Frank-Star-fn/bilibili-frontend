@@ -3,17 +3,17 @@ import Header from './Header';
 import HeaderBanner from './HeaderBanner';
 import HeaderChannel from './HeaderChannel';
 
-function LargeHeader() {
+function LargeHeaderV1400() {
   
   return (
     <Fragment>
         <div className='block'>
-          <Header />
+          <Header version="normal"/>
           <HeaderBanner />
-          <HeaderChannel version="small"/>
+          <HeaderChannel version="normal"/>
         </div>
     </Fragment>
   );
 }
 
-export default LargeHeader;
+export default LargeHeaderV1400;

@@ -1,11 +1,28 @@
 import ChannelLink from './ChannelLink';
 import ChannelLinkR from './ChannelLinkR';
 
-function HeaderChannel() {
+function HeaderChannel(props) {
   const local_website = "http://localhost:3000/";
 
+  let padx = "px-5";
+  let channelsWidth = 'w-6.8vw'
+  let channels = [
+    '番剧', '电影', '国创', '电视剧', '综艺', '纪录片',
+    '动画', '游戏', '鬼畜', '音乐', '舞蹈', '影视', 
+    '娱乐', '知识', '科技', '资讯', '美食'
+  ];
+
+  if (props.version === "normal") {
+    padx = "px-15"
+    channelsWidth = 'w-5.07vw'
+    channels.push('生活', '汽车', '时尚', '运动');
+  }
+  const classDiv1 = padx + ' flex justify-center items-center mb-1 h-24'
+  const classDiv2 = channelsWidth+"flex-auto border py-1 text-grey-61666D text-13px font-normal bg-gray-50 rounded-md tracking-wider";
+
+
   return (
-  <div className='flex justify-center items-center mx-5 mb-1 h-24'>
+  <div className={classDiv1}>
     <div className='flex-auto flex justify-center items-center text-center'>
       <a href={local_website} className='flex-1 flex flex-col items-center mx-1'>
         <div>
@@ -28,30 +45,16 @@ function HeaderChannel() {
 
     <div className='flex-auto flex justify-center'>
       <div className='flex-auto grid grid-rows-2 grid-flow-col gap-2.5 pr-5 border-r text-center justify-center text-center'>
-        <ChannelLink name="番剧" />
-        <ChannelLink name="电影" />
-        <ChannelLink name="国创" />
-        <ChannelLink name="电视剧" />
-        <ChannelLink name="综艺" />
-        <ChannelLink name="纪录片" />
-        <ChannelLink name="动画" />
-        <ChannelLink name="游戏" />
-        <ChannelLink name="鬼畜" />
-        <ChannelLink name="音乐" />
-        <ChannelLink name="舞蹈" />
-        <ChannelLink name="影视" />
-        <ChannelLink name="娱乐" />
-        <ChannelLink name="知识" />
-        <ChannelLink name="科技" />
-        <ChannelLink name="资讯" />
-        <ChannelLink name="美食" />
-        
+        {channels.map(name => (
+          <ChannelLink key={name} name={name} channelsWidth={channelsWidth}/>
+        ))}
+
         {/* <ChannelLink name="更多" /> */}
-        <a href={local_website} className="flex-auto border w-6.8vw py-1 text-grey-61666D text-13px font-normal bg-gray-50 rounded-md tracking-wider">
+        <a href={local_website} className={classDiv2}>
           <div className='flex justify-center items-center'>
             <span className='px-1'>更多</span>
             <svg className='w-3 h-3 pt-0.5'>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50588 3.40623C7.40825 3.3086 7.24996 3.3086 7.15232 3.40623L4.41244 6.14612L1.67255 3.40623C1.57491 3.3086 1.41662 3.3086 1.31899 3.40623C1.22136 3.50386 1.22136 3.66215 1.31899 3.75978L4.11781 6.5586C4.28053 6.72132 4.54434 6.72132 4.70706 6.5586L7.50588 3.75978C7.60351 3.66215 7.60351 3.50386 7.50588 3.40623Z" fill="currentColor"></path>
+              <path fillRule="evenodd" clipRule="evenodd" d="M7.50588 3.40623C7.40825 3.3086 7.24996 3.3086 7.15232 3.40623L4.41244 6.14612L1.67255 3.40623C1.57491 3.3086 1.41662 3.3086 1.31899 3.40623C1.22136 3.50386 1.22136 3.66215 1.31899 3.75978L4.11781 6.5586C4.28053 6.72132 4.54434 6.72132 4.70706 6.5586L7.50588 3.75978C7.60351 3.66215 7.60351 3.50386 7.50588 3.40623Z" fill="currentColor"></path>
               <path d="M7.15232 3.40623L7.50588 3.75978L7.50588 3.75978L7.15232 3.40623ZM7.50588 3.40623L7.15232 3.75978L7.15233 3.75978L7.50588 3.40623ZM4.41244 6.14612L4.05888 6.49967C4.15265 6.59344 4.27983 6.64612 4.41244 6.64612C4.54504 6.64612 4.67222 6.59344 4.76599 6.49967L4.41244 6.14612ZM1.67255 3.40623L2.0261 3.05268L2.0261 3.05268L1.67255 3.40623ZM1.31899 3.40623L0.965439 3.05268L0.965439 3.05268L1.31899 3.40623ZM1.31899 3.75978L1.67255 3.40623V3.40623L1.31899 3.75978ZM4.11781 6.5586L3.76425 6.91215L4.11781 6.5586ZM4.70706 6.5586L4.35351 6.20505L4.70706 6.5586ZM7.50588 3.75978L7.15233 3.40623L7.15232 3.40623L7.50588 3.75978ZM7.50588 3.75978C7.40825 3.85742 7.24996 3.85742 7.15232 3.75978L7.85943 3.05268C7.56654 2.75978 7.09166 2.75978 6.79877 3.05268L7.50588 3.75978ZM4.76599 6.49967L7.50588 3.75978L6.79877 3.05268L4.05888 5.79257L4.76599 6.49967ZM1.31899 3.75978L4.05888 6.49967L4.76599 5.79257L2.0261 3.05268L1.31899 3.75978ZM1.67254 3.75979C1.57491 3.85742 1.41662 3.85742 1.31899 3.75979L2.0261 3.05268C1.73321 2.75978 1.25833 2.75978 0.965439 3.05268L1.67254 3.75979ZM1.67255 3.40623C1.77018 3.50386 1.77018 3.66215 1.67255 3.75978L0.965439 3.05268C0.672546 3.34557 0.672546 3.82044 0.965439 4.11334L1.67255 3.40623ZM4.47136 6.20505L1.67255 3.40623L0.965439 4.11334L3.76425 6.91215L4.47136 6.20505ZM4.35351 6.20505C4.38605 6.1725 4.43882 6.1725 4.47136 6.20505L3.76425 6.91215C4.12223 7.27013 4.70264 7.27013 5.06062 6.91215L4.35351 6.20505ZM7.15232 3.40623L4.35351 6.20505L5.06062 6.91215L7.85943 4.11334L7.15232 3.40623ZM7.15233 3.75978C7.05469 3.66215 7.05469 3.50386 7.15233 3.40623L7.85943 4.11334C8.15233 3.82045 8.15233 3.34557 7.85943 3.05268L7.15233 3.75978Z" fill="currentColor"></path>
             </svg>
           </div>

@@ -4,7 +4,7 @@ function RecommendBoxV1400() {
 
   return (
   <div className='col-span-2 row-span-2'>
-    <div className='pb-16 h-full'>
+    <div className='pb-16 h-25.65vw'>
       <div>
         <div>
           <div></div>
@@ -12,15 +12,15 @@ function RecommendBoxV1400() {
             <picture>
               <img 
                 src="recommend-pic-1.jpg" alt="" 
-                className='rounded-t-md'
+                className='rounded-t-md w-35.26vw'
               />
             </picture>
           </a>
           <div className='flex flex-col'>
-            <div className='absolute z-30 w-35.47vw h-20 -mt-20 bg-gradient-to-t from-purple-443'>
+            <div className='absolute z-30 w-35.26vw h-20 -mt-20 bg-gradient-to-t from-purple-443'>
             </div>
             <div 
-              className='reference-element w-full h-20 rounded-b-md bg-purple-443'
+              className='reference-element w-35.26vw h-20 rounded-b-md bg-purple-443'
             >
             </div>
           </div>
