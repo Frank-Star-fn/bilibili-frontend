@@ -5,11 +5,11 @@ function VideoCardV1400(props) {
   const local_website = "http://localhost:3000/";
   // console.log(props.title.length);
 
-  let len1 = props.title.length
-  let max_len = 33;
-  if(len1 > max_len){
-    title_cut = props.title.substring(0, max_len-1)+"..."
-  }
+  // let len1 = props.title.length
+  // let max_len = 33;
+  // if(len1 > max_len){
+  //   title_cut = props.title.substring(0, max_len-1)+"..."
+  // }
 
   return (
     <Fragment>
@@ -75,7 +75,7 @@ function VideoCardV1400(props) {
             <div className="">
               <div></div>
               <h3 title={title_cut} className="my-1.5 h-12">
-                <a href={local_website}>
+                <a href={local_website} className="webkit-box">
                   {title_cut}
                 </a>
               </h3>

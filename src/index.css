@@ -116,6 +116,14 @@
   font-size: 13px;
 }
 
+.webkit-box {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 input::-webkit-input-placeholder {
   color: #61666d;

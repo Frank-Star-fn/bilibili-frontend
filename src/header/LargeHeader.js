@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import Header from './Header';
-import ChannelLink from './ChannelLink';
-import ChannelLinkR from './ChannelLinkR';
-import ImageLayer from './ImageLayer';
+import ChannelLink from '../ChannelLink';
+import ChannelLinkR from '../ChannelLinkR';
+import ImageLayer from '../ImageLayer';
 
 function LargeHeader() {
   const local_website = "http://localhost:3000/";

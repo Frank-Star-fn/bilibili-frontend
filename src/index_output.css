@@ -830,6 +830,10 @@ video {
   row-gap: 0.625rem;
 }
 
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1153,6 +1157,15 @@ video {
 
 .text-13px {
   font-size: 13px;
+}
+
+.webkit-box {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 input::-webkit-input-placeholder {

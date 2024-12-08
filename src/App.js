@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { Fragment } from 'react';
-import LargeHeader from './LargeHeader';
+import LargeHeader from './header/LargeHeader';
 import GridBox from './GridBox';
 import GridBoxFiveCol from './GridBoxFiveCol';
 import ButtonChange from './ButtonChange';
@@ -59,7 +59,7 @@ function App() {
         {eleSmall};
       </Fragment>
     );
-  }else{
+  }else{ // width >= breakpoint
     console.log("normal, width = "+width)
     return (
       <Fragment>
