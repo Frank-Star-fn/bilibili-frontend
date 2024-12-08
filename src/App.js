@@ -155,7 +155,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              
+
               <VideoCard 
                 pictureSrc="video-1-pic.jpg" title="聊聊3.13中你们感兴趣的特性，和我实现的功能" 
                 author="码农高天" date="10-11"
@@ -173,25 +173,25 @@ function App() {
                 author="乌鸦预告片" date="11-25"
               ></VideoCard>
 
-              <div className='pt-12'>
+              <div className='pt-10'>
                   <VideoCard 
                     pictureSrc="video-2-pic.jpg" title="为什么哪里都有Docker的身影？你真的了解它背后的容器技术吗？" 
                     author="Valiant程" date="11-14" 
                   ></VideoCard>
               </div>
-              <div className='pt-12'>
+              <div className='pt-10'>
                 <VideoCard 
                   pictureSrc="video-3-pic.jpg" title="【1818黄金眼】“00后”通过中介进电子工厂，涉世未深 vs 门道很深" 
                   author="1818黄金眼" date="11-30"
                 ></VideoCard>
               </div>
-              <div className='pt-12'>
+              <div className='pt-10'>
                 <VideoCard 
                   pictureSrc="video-4-pic.jpg" title="终于来了！Netflix魔幻史诗大剧《百年孤独》正式预告，年度必看！12.11上线" 
                   author="乌鸦预告片" date="11-25"
                 ></VideoCard>
               </div>
-              <div className='pt-12'>
+              <div className='pt-10'>
                 <VideoCard 
                   pictureSrc="video-1-pic.jpg" title="聊聊3.13中你们感兴趣的特性，和我实现的功能" 
                   author="码农高天" date="10-11"

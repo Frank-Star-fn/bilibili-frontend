@@ -5,7 +5,7 @@ function ChannelLink(props) {
 
   return (
     <Fragment>
-      <a href={local_website} className="border w-18 py-1 text-grey-61666D text-sm font-normal bg-gray-50 rounded-md tracking-wider">
+      <a href={local_website} className="border w-18 py-1 text-grey-61666D text-13px font-normal bg-gray-50 rounded-md tracking-wider">
         {props.name}
       </a>
     </Fragment>

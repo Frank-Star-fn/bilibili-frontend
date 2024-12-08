@@ -57,7 +57,7 @@ function VideoCard(props) {
               <div>
 
               </div>
-              <h3 title={title_cut}>
+              <h3 title={title_cut} className="my-1.5">
                 <a href="">
                   {title_cut}
                 </a>

@@ -8,6 +8,9 @@
 .w-18 {
   width: 4.5rem; /* 72px */
 }
+.w-54 {
+  width: 13.5rem; /* 216px */
+}
 .w-416 {
   width: 104rem; /* 1664px */
 }
@@ -22,7 +25,7 @@
   left: 28rem; /* 448px */
 }
 .text-grey-61666D {
-  color: #61666D
+  color: #61666D;
 }
 .bg-purple-443 {
   background-color: rgb(160 122 161);
@@ -30,6 +33,14 @@
 .bg-red-f07775 {
   background-color: #f07775;
 }
+.bg-pink-fb7299 {
+  background-color: #fb7299;
+}
+
 .font-chinese {
   font-family: PingFang SC,HarmonyOS_Regular,Helvetica Neue,Microsoft YaHei,sans-serif !important
 }
+.text-13px {
+  font-size: 13px;
+}
+
