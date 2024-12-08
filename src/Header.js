@@ -56,7 +56,7 @@ function Header(props) {
             <form action="" className='flex items-center ml-1 mr-2 my-1 bg-gray-100 opacity-90 rounded-lg'>
               <div className="bg-transparent w-50">
                 <input 
-                  className='w-54 p-2.5 bg-transparent text-sm'
+                  className='w-20vw p-2.5 bg-transparent text-sm'
                   type="text" value={searchContent}
                   // 搜索内容
                   placeholder="清华研发格斗机器人"

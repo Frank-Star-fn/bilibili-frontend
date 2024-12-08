@@ -23,8 +23,7 @@ function VideoCard(props) {
           </div>
         </div>
 
-
-        <div className="w-60">
+        <div className="w-22.2vw">
           <a href={local_website}>
             <div>
               <div>
@@ -35,14 +34,13 @@ function VideoCard(props) {
                 <picture className="">
                   <img 
                     src={props.pictureSrc} alt="" 
-                    className="rounded-md w-60 h-32"
+                    className="rounded-md w-full h-12.5vw"
                   />
                 </picture>
-
                 <div></div>
               </div>
 
-              <div className="absolute z-20 w-60 h-9 -mt-9 text-white text-13px">
+              <div className="absolute z-20 w-22.2vw h-9 -mt-9 text-white text-13px">
                 <div className="justify-center items-center flex w-full h-full bg-gradient-to-t from-gray-600 rounded-md">
                   <div className="mb-1 mt-auto flex">
                     <span className="flex mx-1.5">

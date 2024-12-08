@@ -20,6 +20,19 @@
 .w-416 {
   width: 104rem; /* 1664px */
 }
+.w-20vw {
+  width: 20vw;
+}
+.w-22\.2vw {
+  width: 22.2vw;
+}
+.w-46\.5vw {
+  width: 46.5vw;
+}
+.w-50vw {
+  width: 50vw;
+}
+
 .h-4\.5 {
   height: 18px;
 }
@@ -28,6 +41,9 @@
 }
 .h-38\.75 {
   height: 155px;
+}
+.h-12\.5vw {
+  height: 12.5vw;
 }
 
 .mt-21 {
@@ -69,6 +85,7 @@
 .text-13px {
   font-size: 13px;
 }
+
 
 input::-webkit-input-placeholder {
   color: #61666d;
