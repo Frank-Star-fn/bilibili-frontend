@@ -1,17 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.w-6\.25 {
+  width: 25px;
+}
 .w-18 {
   width: 4.5rem; /* 72px */
 }
 .w-416 {
   width: 104rem; /* 1664px */
 }
+.h-6\.25 {
+  height: 25px;
+}
+
 .mt-21 {
   margin-top: 5.25rem; /* 84px */
 }
+.left-112 {
+  left: 28rem; /* 448px */
+}
 .text-grey-61666D {
   color: #61666D
+}
+.bg-purple-443 {
+  background-color: rgb(160 122 161);
+}
+.bg-red-f07775 {
+  background-color: #f07775;
 }
 .font-chinese {
   font-family: PingFang SC,HarmonyOS_Regular,Helvetica Neue,Microsoft YaHei,sans-serif !important
