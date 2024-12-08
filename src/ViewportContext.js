@@ -24,10 +24,9 @@ const ViewportProvider = ({ children }) => {
   );
 };
 
-const useViewport = () => {
-  const { width, height } = React.useContext(viewportContext);
-  return { width, height };
-}
+// const useViewport = () => {
+//   const { width, height } = React.useContext(viewportContext);
+//   return { width, height };
+// }
 
 export default ViewportProvider;
-// export default useViewport;

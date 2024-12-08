@@ -2,8 +2,8 @@ import './App.css';
 import React from 'react';
 import { Fragment } from 'react';
 import LargeHeader from './header/LargeHeader';
-import GridBox from './GridBox';
-import GridBoxFiveCol from './GridBoxFiveCol';
+import GridBox from './grid/GridBox';
+import GridBoxFiveCol from './grid/GridBoxFiveCol';
 import ButtonChange from './ButtonChange';
 
 const useViewport = () => {

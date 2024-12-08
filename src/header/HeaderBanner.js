@@ -1,4 +1,4 @@
-import ImageLayer from '../ImageLayer';
+import ImageLayer from './ImageLayer';
 
 function HeaderBanner() {
   const local_website = "http://localhost:3000/";
