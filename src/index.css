@@ -20,17 +20,35 @@
 .w-416 {
   width: 104rem; /* 1664px */
 }
+.w-2\.22vw {
+  width: 2.22vw;
+}
+.w-4vw {
+  width: 4vw;
+}
+.w-6\.8vw {
+  width: 6.8vw;
+}
+.w-17\.07vw {
+  width: 17.07vw;
+}
 .w-20vw {
   width: 20vw;
 }
 .w-22\.2vw {
   width: 22.2vw;
 }
+.w-35\.47vw {
+  width: 35.47vw;
+}
 .w-46\.5vw {
   width: 46.5vw;
 }
 .w-50vw {
   width: 50vw;
+}
+.w-100vw {
+  width: 100vw;
 }
 
 .h-4\.5 {
@@ -42,6 +60,9 @@
 .h-38\.75 {
   height: 155px;
 }
+.h-9\.6vw {
+  height: 9.6vw;
+}
 .h-12\.5vw {
   height: 12.5vw;
 }
@@ -49,6 +70,15 @@
 .mt-21 {
   margin-top: 5.25rem; /* 84px */
 }
+.px-2\.22vw {
+  padding-left: 2.22vw;
+  padding-right: 2.22vw;
+}
+.px-15 {
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+}
+
 .left-112 {
   left: 28rem; /* 448px */
 }

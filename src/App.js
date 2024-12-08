@@ -26,7 +26,7 @@ function App() {
 
   const eleSmall = (
     <div>
-      <LargeHeader />
+        <LargeHeader />
         <div className="font-chinese font-normal">
           <main className='mx-5'>
             <div>
@@ -40,9 +40,9 @@ function App() {
 
   const eleNormal = (
     <div>
-      <LargeHeader />
+        <LargeHeader />
         <div className="font-chinese font-normal">
-          <main className='mx-5'>
+          <main className='px-15'>
             <div>
               <GridBoxFiveCol />
               <ButtonChange />

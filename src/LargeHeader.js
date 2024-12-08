@@ -52,7 +52,7 @@ function LargeHeader() {
             </div>
 
             <div className='flex-auto flex justify-center'>
-              <div className='grid grid-rows-2 grid-flow-col gap-2.5 pr-5 border-r text-center justify-center text-center'>
+              <div className='flex-auto grid grid-rows-2 grid-flow-col gap-2.5 pr-5 border-r text-center justify-center text-center'>
                 <ChannelLink name="番剧" />
                 <ChannelLink name="电影" />
                 <ChannelLink name="国创" />
@@ -72,7 +72,7 @@ function LargeHeader() {
                 <ChannelLink name="美食" />
                 
                 {/* <ChannelLink name="更多" /> */}
-                <a href={local_website} className="border w-18 py-1 text-grey-61666D text-13px font-normal bg-gray-50 rounded-md tracking-wider">
+                <a href={local_website} className="flex-auto border w-6.8vw py-1 text-grey-61666D text-13px font-normal bg-gray-50 rounded-md tracking-wider">
                   <div className='flex justify-center items-center'>
                     <span className='px-1'>更多</span>
                     <svg className='w-3 h-3 pt-0.5'>

@@ -17,8 +17,8 @@ function Header(props) {
   };
   return (
     <Fragment>
-      <div className='z-30 absolute h-16 pl-7 flex justify-center items-center'>
-        <ul className='flex justify-center items-center'>
+      <div className='z-30 absolute w-100vw h-16 px-2.22vw flex justify-center items-center'>
+        <ul className='flex-none flex justify-center items-center'>
           <li className='mr-2.5 text-white'>
             <a href={local_website} className="flex justify-center items-center">
               <svg className="w-5 h-5 mr-1 mt-1">
@@ -51,12 +51,12 @@ function Header(props) {
           {/* <HeaderItem name="下载客户端" /> */}
         </ul>
 
-        <div>
+        <div className="flex-auto">
           <div>
             <form action="" className='flex items-center ml-1 mr-2 my-1 bg-gray-100 opacity-90 rounded-lg'>
-              <div className="bg-transparent w-50">
+              <div className="bg-transparent w-full">
                 <input 
-                  className='w-20vw p-2.5 bg-transparent text-sm'
+                  className='w-full p-2.5 bg-transparent text-sm'
                   type="text" value={searchContent}
                   // 搜索内容
                   placeholder="清华研发格斗机器人"
@@ -72,8 +72,9 @@ function Header(props) {
             </form>
           </div>
         </div>
-        <ul className='flex items-center'>
-          <li className='mx-2'>
+
+        <ul className='flex-none flex items-center'>
+          <li className='flex-auto mx-2'>
             <div>
               <a href={local_website} className='block w-9'>
                 <picture>
@@ -87,7 +88,7 @@ function Header(props) {
             </div>
             <div></div>
           </li>
-          <div className='mx-2 text-white'>
+          <div className='flex-auto mx-2 text-white'>
             <li>
               {/* 大会员 */}
               <a href={local_website}>
@@ -101,7 +102,7 @@ function Header(props) {
             </li>
             <div></div>
           </div>
-          <li className='mx-2 text-white'>
+          <li className='flex-auto mx-2 text-white'>
             {/* 消息 */}
             <a href={local_website}>
               <svg className="w-5 h-5">
@@ -111,7 +112,7 @@ function Header(props) {
             </a>
             <div></div>
           </li>
-          <li className='mx-2 text-white bg-transparent'>
+          <li className='flex-auto mx-2 text-white bg-transparent'>
             {/* 动态 */}
             <a href={local_website}>
               <svg className="w-5 h-5">
@@ -130,7 +131,7 @@ function Header(props) {
             </a>
             <div></div>
           </li>
-          <li className='mx-2 text-white'>
+          <li className='flex-auto mx-2 text-white'>
             {/* 收藏 */}
             <a href={local_website}>
               <svg className="w-5 h-5">
@@ -140,8 +141,8 @@ function Header(props) {
             </a>
             <div></div>
           </li>
-          <li className='mx-2 text-white'>
-            {/* 历史记录 */}
+          <li className='flex-auto mx-2 text-white'>
+            {/* 历史 */}
             <a href={local_website}>
               <svg className="w-5 h-5">
               <path fillRule="evenodd" clipRule="evenodd" d="M10 1.74286C5.02955 1.74286 1 5.7724 1 10.7429C1 15.7133 5.02955 19.7429 10 19.7429C14.9705 19.7429 19 15.7133 19 10.7429C19 5.7724 14.9705 1.74286 10 1.74286ZM10.0006 3.379C14.0612 3.379 17.3642 6.68282 17.3642 10.7426C17.3642 14.8033 14.0612 18.1063 10.0006 18.1063C5.93996 18.1063 2.63696 14.8033 2.63696 10.7426C2.63696 6.68282 5.93996 3.379 10.0006 3.379Z" fill="currentColor"></path>
@@ -152,7 +153,7 @@ function Header(props) {
             <div></div>
           </li>
 
-          <li className='mx-2 text-white'>
+          <li className='flex-auto mx-2 text-white'>
             {/* 创作中心 */}
             <a href={local_website}>
               <svg className="w-5 h-5">
@@ -168,7 +169,7 @@ function Header(props) {
             <div></div>
           </li>
 
-          <li className='mx-1.5 p-2 text-white bg-pink-fb7299 rounded-lg'>
+          <li className='flex-auto mx-1.5 p-2 text-white bg-pink-fb7299 rounded-lg'>
             {/* 投稿 */}
             <div>
               <a href={local_website}>
